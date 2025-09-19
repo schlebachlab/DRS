@@ -48,10 +48,23 @@ GPCRs_genenames.csv
 This includes HGNC symbol, HGNC name, and ensemble gene name. There were 1416 entries. I broke these up into these two somewhat redundant files:
 
 gene_name_data.csv (this has all the data in a more simplified format). I use this to find gene names, GPCR classes, etc, if there is a corresponding uniprot sequence.
-gene_names_all_ensembl.csv (this has only the data that has an esembl ID – I iterate through this list in a separate function in the script to find Ensembl gene IDs for GPCRs not in Uniprot). 
-
+gene_names_all_ensembl.csv (this has only the data that has an esembl ID – I iterate through this list in a separate function in the script to find Ensembl gene IDs for GPCRs not in Uniprot).
 
 List of common restriction sites
 restriction_enzymes.csv
 
-This was curated by our laboratory technician as a list of the most common restriction sites. The script reads these in the format shown and creates regular expressions out of them.
+This is a list of the 135 common restriction sites. The script reads these in the format shown and creates regular expressions out of them.
+
+gpcr_build_geneblocks_from_final_output_gly_labels.py
+
+Inserts the gene blocks into our complete vector.
+
+find_HA_insert_positions_v2b.py
+
+Searches for optimal places to insert HA tags using predictited structural features from NetsurfP and SignalP
+
+This script is designed to find the optimal positions for inserting an HA tag into a set of proteins. The HA tag is a short peptide sequence derived from the influenza hemagglutinin protein, often used in biochemistry and molecular biology to tag a protein of interest. The script attempts to choose insertion sites such that the HA tag’s insertion neither disrupts the protein's function nor overlaps with the signal peptide cleavage site, maximizing its accessibility for detection. The script imports and processes data from SignalP and NetSurfP predictions performed on sequences with and without the HA tags inserted at a series of sites downstream from the cleavage site, assesses potential HA tag insertion sites based on various predicted biophysical parameters, scores each site, and selects the optimal position for each protein. The results, along with detailed logs, are saved for further analysis. Adjustments to scoring weights and parameters can be made to refine the selection process.
+
+
+
+
