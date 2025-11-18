@@ -24,7 +24,7 @@ This ensures biologically meaningful thresholding for high vs low PME.
   •	Stratified on the target label
   •	Seed = 42 for reproducibility
   •	Features are scaled only on the training set to prevent data leakage
-4. Model Training
+4. Model Training - 
 All versions train a Random Forest classifier but differs in hyperparameter optimization and resampling.
 v1 — No Hyperparameter Tuning
   •	Random Forest with fixed parameters
@@ -38,7 +38,7 @@ v4 — SMOTE + GridSearchCV
   •	Balances classes prior to training
   •	Followed by GridSearchCV
   •	Useful as PME cutoff creates imbalance
-5. Model Evaluation
+5. Model Evaluation - 
 We report:
   •	Balanced accuracy 
   •	Precision
@@ -47,13 +47,13 @@ We report:
   •	ROC-AUC
   •	Confusion matrix
   •	Full classification report
-6. SHAP Interpretability
+6. SHAP Interpretability - 
 Each script generates:
   •	SHAP summary plot
   •	Top 10 features driving the model
-7. Gini Feature Importance
+7. Gini Feature Importance - 
 Random Forest feature importances are exported as a sorted dataframe.
-8. Baseline Model Comparison
+8. Baseline Model Comparison - 
 Each script compares Random Forest to:
   •	Logistic Regression
   •	k-NN
