@@ -18,7 +18,6 @@ Before creating binary labels, scripts:
   •	Allow a manual cutoff provided 
   •	Report class balance and imbalance ratio
   •	Warn if the cutoff produces extreme imbalance
-This ensures biologically meaningful thresholding for high vs low PME.
 3. Dataset Split - 
   •	Train-test split: 80:20
   •	Stratified on the target label
