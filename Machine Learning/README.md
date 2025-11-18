@@ -52,7 +52,7 @@ Each script generates:
   •	SHAP summary plot
   •	Top 10 features driving the model
 7. Gini Feature Importance - 
-Random Forest feature importances are exported as a sorted dataframe.
+Random Forest feature importances.
 8. Baseline Model Comparison - 
 Each script compares Random Forest to:
   •	Logistic Regression
