@@ -18,12 +18,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 from IPython.display import display, HTML
 from scipy import stats
+from pathlib import Path
 
-# Set working directory
-os.chdir('/home/goel107/GPCRs/GPCR_ML_2-OLD/')
+# Get directory where THIS script lives
+SCRIPT_DIR = Path(__file__).resolve().parent
 
-# Load dataset
-df_gpcr = pd.read_csv('GPCR_HIGH_EXPRESSION_FEATURES_FINAL.csv')
+# Build path to CSV (same folder)
+csv_path = SCRIPT_DIR / "GPCR_HIGH_EXPRESSION_FEATURES_FINAL.csv"
+
+# Load it
+df_gpcr = pd.read_csv(csv_path)
 
 # Define the list of specific features to extract
 selected_features = [
