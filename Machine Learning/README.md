@@ -8,9 +8,9 @@ Each suprvised machine learning scripts follows a consistent pipeline:
   6.	Compare multiple baseline ML models
 
 Supervised Machine Learning Workflow
-1. Data Loading
+1. Data Loading - 
 Each script loads a curated dataset containing transcript and/or protein (structural and topological) features. Scripts extract only required features and create a modeling dataframe.
-2. PME Distribution Analysis
+2. PME Distribution Analysis - 
 Before creating binary labels, scripts:
   •	Compute descriptive statistics
   •	Visualize histogram + KDE
@@ -19,7 +19,7 @@ Before creating binary labels, scripts:
   •	Report class balance and imbalance ratio
   •	Warn if the cutoff produces extreme imbalance
 This ensures biologically meaningful thresholding for high vs low PME.
-3. Dataset Split
+3. Dataset Split - 
   •	Train-test split: 80:20
   •	Stratified on the target label
   •	Seed = 42 for reproducibility
