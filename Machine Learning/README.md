@@ -28,11 +28,11 @@ All versions train a Random Forest classifier but differs in hyperparameter opti
 v1 — No Hyperparameter Tuning
   •	Random Forest with fixed parameters
   •	Establishes a reproducible baseline
-v2 — RandomizedSearchCV
+. v2 — RandomizedSearchCV
   •	Randomized hyperparameter search for exploration of large hyperparameter space
-v3 — GridSearchCV
+. v3 — GridSearchCV
   •	Exhaustive hyperparameter tuning for smaller but thorough search space 
-v4 — SMOTE + GridSearchCV
+. v4 — SMOTE + GridSearchCV
   •	Oversampling using SMOTE on the training set
   •	Balances classes prior to training
   •	Followed by GridSearchCV
