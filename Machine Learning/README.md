@@ -63,7 +63,7 @@ Each script compares Random Forest to:
   •	Gradient Boosting
   •	Neural Network (MLP)
   •	XGBoost
-Evaluation uses 5-fold cross-validation on training data with metrics:
+. Evaluation uses 5-fold cross-validation on training data with metrics:
   •	Balanced accuracy
   •	F1
   •	Precision
