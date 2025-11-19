@@ -24,7 +24,7 @@ Before creating binary labels, scripts:
   •	Seed = 42 for reproducibility
   •	Features are scaled only on the training set to prevent data leakage
 4. Model Training - 
-All versions train a Random Forest classifier but differs in hyperparameter optimization and resampling.
+All versions train a Random Forest classifier but differs in hyperparameter optimization and resampling. v*-FINAL.py represents the model utilised after hyperparamter tuning.
 v1 — No Hyperparameter Tuning
   •	Random Forest with fixed parameters
   •	Establishes a reproducible baseline
