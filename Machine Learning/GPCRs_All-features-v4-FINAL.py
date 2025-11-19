@@ -24,7 +24,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 
 # Build path to CSV (same folder)
-csv_path = SCRIPT_DIR / "GPCR_HIGH_EXPRESSION_FEATURES_FINAL.csv"
+csv_path = SCRIPT_DIR / "GPCR_TRANSCRIPT_PROTEIN_FEATURES.csv"
 
 # Load it
 df_gpcr = pd.read_csv(csv_path)
