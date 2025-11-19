@@ -10,6 +10,7 @@ The final step involved the output of processed data, which was then categorized
 Installation of environment:
 
 Please use provided Conda environment.
+
 conda env create -f gpcr_env.yml
 
 Description of library assembly
