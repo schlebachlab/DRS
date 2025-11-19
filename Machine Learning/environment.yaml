@@ -1,4 +1,4 @@
-name: GPCR_machiine_learning
+name: GPCR_machine_learning
 channels:
   - conda-forge
   - defaults
@@ -20,3 +20,4 @@ dependencies:
 
   - pip:
       - xgboost==2.1.1
+
