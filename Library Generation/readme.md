@@ -7,6 +7,11 @@ To facilitate downstream experimental tracking, a unique barcode was generated f
 
 The final step involved the output of processed data, which was then categorized into three distinct groups: the primary output of aligned and barcoded sequences, Uniprot entries not found in Ensembl, and sequences exclusive to Ensembl. This information was exported in CSV format to enable further analysis, and sequence data was also formatted into FASTA files for potential utilization in other bioinformatics tools.
 
+Installation of environment:
+
+Please use provided Conda environment.
+conda env create -f gpcr_env.yml
+
 Description of library assembly
 
 gpcr_seq_routines_v7_bsmbi_filter.py
