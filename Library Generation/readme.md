@@ -13,6 +13,8 @@ Please use provided Conda environment.
 
 conda env create -f gpcr_env.yml
 
+Scripts were run on an Intel workstation running Almalinux 10. Each step required only a few seconds of CPU time.
+
 Description of library assembly
 
 gpcr_seq_routines_v7_bsmbi_filter.py
