@@ -1,5 +1,9 @@
 The following steps were performed using the riboseq analysis on the GPCR library. Before these steps, reads were processed as described in the manuscript to trim, remove RNA contaminants, etc.
 
+To use custom Python scripts, please use provided yml to install a conda environment to set up dependencies:
+
+conda env create -f drs_riboseq.yml
+
 1. Index genome using STAR
 STAR --runThreadN 16 \
      --runMode genomeGenerate \
