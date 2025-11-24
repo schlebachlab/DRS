@@ -4,6 +4,8 @@ To use custom Python scripts, please use provided yml to install a conda environ
 
 conda env create -f drs_riboseq.yml
 
+Scripts were run on an Intel workstation running Almalinux 10. Each custom script required less than a second to execute.
+
 1. Index genome using STAR
 STAR --runThreadN 16 \
      --runMode genomeGenerate \
